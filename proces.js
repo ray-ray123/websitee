@@ -1,13 +1,8 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyCRlJcZqErrZ95ejYEtubNiIjGhUSD73tU",
-  authDomain: "pnst1-bdad9.firebaseapp.com",
-  projectId: "pnst1-bdad9",
-  storageBucket: "pnst1-bdad9.firebasestorage.app",
-  messagingSenderId: "1033616137929",
-  appId: "1:1033616137929:web:ffe127dbf9f8c8072b3718",
-  measurementId: "G-BVZFT3LQEX"
-};
+const encodedConfig = "ewogIGFwaUtleTogIkFJSXpheVN5Q1JsSnNaUUVyWjk1ZWpZRXR1Yk5pSWpHaFVTRDczdSIsCiAgYXV0aERvbWFpbjogInBuc3QxLWJkYWQ5LmZpcmViYXNlYXBwLmNvbSIsCiAgcHJvamVjdElkOiAicG5zdDEtYmRhZDkiLAogIHN0b3JhZ2VCdWNrZXQ6ICJwbnN0MS1iZGFkOS5maXJlYmFzZXN0b3JhZ2UuYXBwIiwKICBtZXNzYWdpbmdTZW5kZXJJZDogIjEwMzM2MTYxMzc5MjkiLAogIGFwcElkOiAiMToxMDMzNjE2MTM3OTp3ZWJmZmUxMjdkYmY5ZjhmODA3MmIzNzE4IiwKICBtZWFzdXJlbWVudElkOiAiRy1CVlpGVDNMSUVYIgogfQ==";
 
+const firebaseConfig = JSON.parse(atob(encodedConfig));
+
+// Now you can use firebaseConfig as usual
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.firestore();
