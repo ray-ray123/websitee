@@ -1,6 +1,13 @@
-const encodedConfig = "eyJhcGlLZXkiOiJBSVpBc3lDUmxKY1pxRXJyWjk1ZWpZRXR1Yk5pSWpHaFVTRDczdSIsImF1dGhEb21haW4iOiJwbnN0MS1iZGFkOS5maXJlYmFzZWFwcC5jb20iLCJwcm9qZWN0SWQiOiJwbnN0MS1iZGFkOSIsInN0b3JhZ2VCdWNrZXQiOiJwbnN0MS1iZGFkOS5maXJlYmFzZXN0b3JhZ2UuYXBwIiwibWVzc2FnaW5nU2VuZGVySWQiOiIxMDMzNjE2MTM3OTI5IiwiYXBwSWQiOiIxOjEwMzM2MTYxMzc5Mjk6d2ViOmZmZTEyN2RiZjlmOGM4MDcyYjM3MTgiLCJtZWFzdXJlbWVudElkIjoiRy1CVlpGVDNMUUVYIn0=";
+const firebaseConfig = {
+  apiKey: "AIzaSyCRlJcZqErrZ95ejYEtubNiIjGhUSD73tU",
+  authDomain: "pnst1-bdad9.firebaseapp.com",
+  projectId: "pnst1-bdad9",
+  storageBucket: "pnst1-bdad9.firebasestorage.app",
+  messagingSenderId: "1033616137929",
+  appId: "1:1033616137929:web:ffe127dbf9f8c8072b3718",
+  measurementId: "G-BVZFT3LQEX"
+};
 
-const firebaseConfig = JSON.parse(atob(encodedConfig));
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.firestore();
